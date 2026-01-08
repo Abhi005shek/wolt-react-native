@@ -1,5 +1,4 @@
 import useUserStore from "@/hooks/useUserStore";
-import React from "react";
 import { Button, Text, View } from "react-native";
 
 function Page() {
@@ -7,7 +6,7 @@ function Page() {
   return (
     <View>
       <Text>My Inside page</Text>
-      <Button title="Go to Login" onPress={() => setIsGuest(true)} />
+      <Button title="Go to Login" onPress={() => setIsGuest(false)} />
     </View>
   );
 }
