@@ -3,6 +3,7 @@ import GoogleButton from "@/components/auth/GoogleButton";
 import SmoothInfiniteScroll from "@/components/SmoothInfiniteScroll";
 import { Fonts } from "@/constants/theme";
 import {LinearGradient} from 'expo-linear-gradient';
+import { Link } from "expo-router";
 import {
   Image,
   Linking,
@@ -51,13 +52,15 @@ export default function Index() {
           <Animated.View entering={FadeInDown.delay(100)}>
             <AppleButton />
           </Animated.View>
-          <Animated.View entering={FadeInDown.delay(100)}>
+          <Animated.View entering={FadeInDown.delay(200)}>
             <GoogleButton />
           </Animated.View>
-          <Animated.View entering={FadeInDown.delay(100)}>
+          <Animated.View entering={FadeInDown.delay(200)}>
+            <Link href={"/(app)/(public)/other-options"} asChild>
             <TouchableOpacity style={styles.otherButton}>
               <Text style={styles.otherButtonText}>Other options</Text>
             </TouchableOpacity>
+            </Link>
           </Animated.View>
         </View>
 
@@ -84,7 +87,7 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     flex: 1,
-    paddingTop: 30,
+    // paddingTop: 30,
     alignItems: "center",
     paddingHorizontal: 30,
   },
