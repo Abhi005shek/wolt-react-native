@@ -3,6 +3,7 @@ import { Slot } from "expo-router";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import {Nunito_400Regular, Nunito_700Bold, Nunito_900Black} from '@expo-google-fonts/nunito';
 import {useFonts} from "expo-font";
+import { StatusBar } from "expo-status-bar";
 
 const queryClient = new QueryClient();
 export default function RootLayout() {
@@ -17,6 +18,7 @@ export default function RootLayout() {
 
   return (
     <>
+    <StatusBar style="dark" />
       <QueryClientProvider client={queryClient}>
         <GestureHandlerRootView style={{ flex: 1 }}>
           <Slot />

@@ -1,7 +1,7 @@
 import AppleButton from "@/components/auth/AppleAuthButton";
 import GoogleButton from "@/components/auth/GoogleButton";
 import SmoothInfiniteScroll from "@/components/SmoothInfiniteScroll";
-import { Fonts } from "@/constants/theme";
+import { Colors, Fonts } from "@/constants/theme";
 import {LinearGradient} from 'expo-linear-gradient';
 import { Link } from "expo-router";
 import {
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   otherButtonText: {
-    color: "#666",
+    color: Colors.muted,
     fontSize: 18,
     fontWeight: "bold",
   },

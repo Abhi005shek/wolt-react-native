@@ -105,14 +105,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderColor: Colors.light,
   },
-  categroyName: {
+  categoryName: {
     fontSize: 14,
     fontWeight: "600",
     marginBottom: 2,
   },
   categoryPlaces: {
     fontSize: 12,
-    color: '#666'
+    color: Colors.muted,
   },
 });
 

@@ -33,12 +33,12 @@ function RestaurantList() {
             </View>
 
             <View style={styles.metadata}>
-              <Ionicons name="bicycle-outline" size={16} color={"#666"} />
-              <Text style={styles.metadataText}>₹ {Number(restaurant.deliveryFee.toFixed(2))*90}</Text>
+              <Ionicons name="bicycle-outline" size={16} color={Colors.muted} />
+              <Text style={styles.metadataText}>₹ {(Number(restaurant.deliveryFee)*90).toFixed(2)}</Text>
               <Text style={styles.dot}>&bull;</Text>
               <Text style={styles.metadataText}>₹₹₹₹</Text>
               <Text style={styles.dot}>&bull;</Text>
-              <Ionicons name='happy-outline' size={16} color={'#666'} />
+              <Ionicons name='happy-outline' size={16} color={Colors.muted} />
             </View>
           </TouchableOpacity>
         </View>
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
 
   description: {
     fontSize: 14,
-    color: "#666",
+    color: Colors.muted,
   },
   metadata: {
     borderTopColor: Colors.light,
@@ -83,11 +83,11 @@ const styles = StyleSheet.create({
   },
   metadataText: {
     fontSize: 13,
-    color: '#666',
+    color: Colors.muted,
   },
   dot: {
     fontSize: 13,
-    color: '#666',
+    color: Colors.muted,
   }
 });
 
