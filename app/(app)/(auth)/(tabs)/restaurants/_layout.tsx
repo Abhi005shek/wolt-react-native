@@ -4,8 +4,8 @@ import { Stack } from "expo-router";
 const RootNav = () => {
   const { isGuest, user } = useUserStore();
   return (
-    <Stack>
-        <Stack.Screen name="index" options={{ }} />
+    <Stack screenOptions={{ contentStyle: { backgroundColor: "white" } }}>
+      <Stack.Screen name="index" options={{headerShown: false}} />
     </Stack>
   );
 };
